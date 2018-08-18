@@ -20,4 +20,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^login.html/', include('RealEstate.urls')),
     url(r'^view/', include('frame.urls')),
+    url(r'^adm/', include('adm.urls')),
+    url(r'^customer/', include('customer.urls')),
 ]

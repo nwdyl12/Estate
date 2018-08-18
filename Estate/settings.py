@@ -40,7 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'RealEstate',
-    'frame'
+    'frame',
+    'adm',
+    'customer',
 ]
 
 MIDDLEWARE = [
@@ -114,7 +116,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 
@@ -130,6 +132,6 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static','css'),
-os.path.join(BASE_DIR,'static','js'),
-os.path.join(BASE_DIR,'static','images')
+    os.path.join(BASE_DIR,'static','js'),
+    os.path.join(BASE_DIR,'static','images')
 ]
