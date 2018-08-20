@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'RealEstate',
     'frame',
     'customer',
-    'employee'
+    'employee',
+    'adm'
 ]
 
 MIDDLEWARE = [
@@ -87,7 +88,7 @@ DATABASES = {
         'HOST': '127.0.0.1',
         'PORT': 3306,
         'USER': 'root',
-        'PASSWORD': '123456'
+        'PASSWORD': 'password'
     }
 }
 
@@ -132,6 +133,6 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static','css'),
-os.path.join(BASE_DIR,'static','js'),
-os.path.join(BASE_DIR,'static','images')
+    os.path.join(BASE_DIR,'static','js'),
+    os.path.join(BASE_DIR,'static','images')
 ]

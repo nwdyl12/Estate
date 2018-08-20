@@ -22,5 +22,6 @@ urlpatterns = [
     url(r'^view/', include('frame.urls')),
     url(r'^employee/',include('employee.urls')),
     url(r'^customer/',include('customer.urls')),
+    url(r'^adm/', include('adm.urls'))
 
 ]
