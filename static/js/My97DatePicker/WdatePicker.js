@@ -4,6 +4,7 @@
  * BLOG: http://my97.cnblogs.com
  * MAIL: smallcarrot@163.com
  */
+
 var $dp,WdatePicker;(function(){var _={
 $wdate:true,
 $dpPath:"",
