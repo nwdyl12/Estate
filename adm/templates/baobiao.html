@@ -10,80 +10,33 @@
 <span style="width:800px;height:400px">
 
     <div id='left' style="width:400px;float:left;height: 400px"></div>
-     <script type="text/javascript">
-        // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('left'));
-     // 初始 option
-       option = {
-    	    title: {
-    	        text: '异步数据加载示例'
-    	    },
-    	    tooltip: {},
-    	     legend: {
-           data:["销售0","销售1","销售2"]
-    	 },
+     <script>
+var myChart1= echarts.init(document.getElementById('left'));
 
-    	    xAxis: {
-    	    	type : "category",
-    	    	data :[]
-    	    },
-    	    yAxis: [{
-				type : "value",
+    // 指定图表的配置项和数据
+    var option = {
+        title: {
+            text: '8月季度报表 '
+        },
+        tooltip: {},
+        legend: {
+            data:['销量']
+        },
+        xAxis: {
+            data: ["西城区","东城区","海淀区","昌平区","丰台区","通州区"]
+        },
+        yAxis: {},
+        series: [{
+            name: '销量',
+            type: 'bar',
+            data: [5, 20, 36, 10, 10, 20]
+        }]
+    };
 
-			}],
-    	    series: [
-    	               {
-    	            	   name:"销售0",
-    	            	   type:"bar",
-    	            	   data:[]
-    	               },
-    	               {
-    	            	   name:"销售1",
-    	            	   type:"bar",
-    	            	   data:[]
-    	               },
-    	               {
-    	            	   name:"销售2",
-    	            	   type:"bar",
-    	            	   data:[]
-    	               }
-    ]
-    	};
-       myChart.showLoading();
-    	//通过Ajax获取数据
-    	$.ajax({
-    		type : "post",
-    		async : true, //异步执行
-    		url : "AcceptData",
-    		dataType : "json", //返回数据形式为json
-    		success : function(json) {
-
-    			if (json) {
-    				 fetchData(function (data) {
-    			            myChart.hideLoading();
-    			            myChart.setOption({
-
-    		    				xAxis:{
-    		    					data:json.xAxisData
-    		    				},
-
-
-    		    				series: json.seriesList
-
-
-
-
-    		    			});
-
-    			});
-    		}
-    		},
-    		error : function(errorMsg) {
-    			alert("请求数据失败");
-    		}
-    	});
-        myChart.setOption(option);
+    // 使用刚指定的配置项和数据显示图表。
+    myChart1.setOption(option);
     </script>
+
     <div id="right" style="width: 400px;height:400px;float:left;">
              <script>
                     var myChart = echarts.init(document.getElementById('right'));
