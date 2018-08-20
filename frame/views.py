@@ -3,13 +3,20 @@ from __future__ import unicode_literals
 
 from django.http import HttpResponse
 from django.shortcuts import render
+from RealEstate.models import *
 
 # Create your views here.
-from RealEstate.models import UserInfo
+def showFrame(request):
+    nname = request.POST.get('userNum')
+    pwd = request.POST.get('userPw')
+    if nname =='admin' and pwd=='pwd':
+        return render(request,'base.html')
+    return render(request,'login.html')
 
 
 def top(request):
-    return render(request,'top.html')
+    nlist = NoticeInfo.objects.all().order_by('-notice_time')
+    return render(request,'top.html',{'nlist':nlist})
 
 
 def left(request):
@@ -22,7 +29,3 @@ def center(request):
 
 def down(request):
     return render(request,'down.html')
-
-
-def showFrame(request):
-    return render(request,'base.html')
