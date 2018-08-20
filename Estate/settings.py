@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-from django.conf import global_settings
+
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'RealEstate',
-    'frame'
+    'frame',
+    'employee',
 ]
 
 MIDDLEWARE = [
@@ -85,7 +86,7 @@ DATABASES = {
         'HOST': '127.0.0.1',
         'PORT': 3306,
         'USER': 'root',
-        'PASSWORD': 'password'
+        'PASSWORD': '180236'
     }
 }
 
@@ -130,6 +131,6 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static','css'),
-os.path.join(BASE_DIR,'static','js'),
-os.path.join(BASE_DIR,'static','images')
+    os.path.join(BASE_DIR,'static','images'),
+    os.path.join(BASE_DIR,'static','js'),
 ]
