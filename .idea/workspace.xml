@@ -1,7 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be9a8fcc-adaf-49e2-bbef-4763b49026ad" name="Default" comment="" />
+    <list default="true" id="be9a8fcc-adaf-49e2-bbef-4763b49026ad" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/adm/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/adm/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/adm/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/adm/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/adm/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/adm/templates/baobiao.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/adm/templates/dept_add.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/adm/templates/emp_add.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/adm/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/adm/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/adm/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customer/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customer/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customer/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customer/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customer/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customer/templates/customer_add.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customer/templates/customer_care_add.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customer/templates/customer_care_edit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customer/templates/customer_care_list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customer/templates/customer_detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customer/templates/customer_edit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customer/templates/customer_list1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customer/templates/customer_type_add.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customer/templates/customer_type_list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customer/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customer/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customer/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/employee/templates/house_add.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/employee/templates/house_edit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/employee/templates/house_list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/echarts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Estate/settings.py" afterPath="$PROJECT_DIR$/Estate/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Estate/urls.py" afterPath="$PROJECT_DIR$/Estate/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RealEstate/views.py" afterPath="$PROJECT_DIR$/RealEstate/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee/urls.py" afterPath="$PROJECT_DIR$/employee/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee/views.py" afterPath="$PROJECT_DIR$/employee/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/templates/center.html" afterPath="$PROJECT_DIR$/frame/templates/center.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/templates/left.html" afterPath="$PROJECT_DIR$/frame/templates/left.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/views.py" afterPath="$PROJECT_DIR$/frame/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/crm.sql" afterPath="$PROJECT_DIR$/static/css/crm.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/My97DatePicker/WdatePicker.js" afterPath="$PROJECT_DIR$/static/js/My97DatePicker/WdatePicker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/login.html" afterPath="$PROJECT_DIR$/templates/login.html" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +77,8 @@
       <file leaf-file-name="customer_care_edit.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/customer/templates/customer_care_edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1760">
-              <caret line="118" column="33" lean-forward="true" selection-start-line="118" selection-start-column="33" selection-end-line="118" selection-end-column="33" />
+            <state relative-caret-position="2714">
+              <caret line="118" column="33" lean-forward="false" selection-start-line="118" selection-start-column="33" selection-end-line="118" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -41,7 +87,7 @@
       <file leaf-file-name="customer_care_add.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/customer/templates/customer_care_add.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1486">
+            <state relative-caret-position="460">
               <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
               <folding />
             </state>
@@ -51,7 +97,7 @@
       <file leaf-file-name="customer_care_list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/customer/templates/customer_care_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1178">
+            <state relative-caret-position="4117">
               <caret line="179" column="39" lean-forward="true" selection-start-line="179" selection-start-column="39" selection-end-line="179" selection-end-column="39" />
               <folding />
             </state>
@@ -61,8 +107,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/employee/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+            <state relative-caret-position="455">
+              <caret line="31" column="21" lean-forward="true" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
               </folding>
@@ -73,7 +119,7 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/customer/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
+            <state relative-caret-position="713">
               <caret line="37" column="27" lean-forward="true" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
@@ -145,7 +191,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1366" />
     <option name="height" value="728" />
   </component>
@@ -298,19 +344,28 @@
     <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="728" extended-state="0" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25268817" sideWeight="0.4903581" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32995495" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23965517" sideWeight="0.5152439" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4432624" sideWeight="0.4847561" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4858156" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38793105" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931036" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17864807" sideWeight="0.4903581" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2124431" sideWeight="0.5096419" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -319,7 +374,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -378,7 +432,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="增加了客户关怀、房屋信息模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加了客户关怀、房屋信息模块" />
+    <MESSAGE value="Merge branch 'master' of git://github.com/nwdyl12/Estate into nwdyl12-master&#10;&#10;# Conflicts:&#10;#&#9;.idea/Estate.iml&#10;#&#9;.idea/misc.xml&#10;#&#9;.idea/workspace.xml&#10;#&#9;Estate/__init__.pyc&#10;#&#9;Estate/settings.py&#10;#&#9;Estate/settings.pyc&#10;#&#9;Estate/urls.py&#10;#&#9;Estate/urls.pyc&#10;#&#9;Estate/wsgi.pyc&#10;#&#9;RealEstate/__init__.pyc&#10;#&#9;RealEstate/admin.pyc&#10;#&#9;RealEstate/migrations/__init__.pyc&#10;#&#9;RealEstate/models.pyc&#10;#&#9;RealEstate/urls.pyc&#10;#&#9;RealEstate/views.py&#10;#&#9;RealEstate/views.pyc&#10;#&#9;employee/__init__.pyc&#10;#&#9;employee/admin.pyc&#10;#&#9;employee/migrations/__init__.pyc&#10;#&#9;employee/models.pyc&#10;#&#9;employee/urls.py&#10;#&#9;employee/urls.pyc&#10;#&#9;employee/views.py&#10;#&#9;employee/views.pyc&#10;#&#9;frame/__init__.pyc&#10;#&#9;frame/admin.pyc&#10;#&#9;frame/migrations/__init__.pyc&#10;#&#9;frame/models.pyc&#10;#&#9;frame/templates/down.html&#10;#&#9;frame/urls.pyc&#10;#&#9;frame/views.py&#10;#&#9;frame/views.pyc&#10;#&#9;templates/login.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of git://github.com/nwdyl12/Estate into nwdyl12-master&#10;&#10;# Conflicts:&#10;#&#9;.idea/Estate.iml&#10;#&#9;.idea/misc.xml&#10;#&#9;.idea/workspace.xml&#10;#&#9;Estate/__init__.pyc&#10;#&#9;Estate/settings.py&#10;#&#9;Estate/settings.pyc&#10;#&#9;Estate/urls.py&#10;#&#9;Estate/urls.pyc&#10;#&#9;Estate/wsgi.pyc&#10;#&#9;RealEstate/__init__.pyc&#10;#&#9;RealEstate/admin.pyc&#10;#&#9;RealEstate/migrations/__init__.pyc&#10;#&#9;RealEstate/models.pyc&#10;#&#9;RealEstate/urls.pyc&#10;#&#9;RealEstate/views.py&#10;#&#9;RealEstate/views.pyc&#10;#&#9;employee/__init__.pyc&#10;#&#9;employee/admin.pyc&#10;#&#9;employee/migrations/__init__.pyc&#10;#&#9;employee/models.pyc&#10;#&#9;employee/urls.py&#10;#&#9;employee/urls.pyc&#10;#&#9;employee/views.py&#10;#&#9;employee/views.pyc&#10;#&#9;frame/__init__.pyc&#10;#&#9;frame/admin.pyc&#10;#&#9;frame/migrations/__init__.pyc&#10;#&#9;frame/models.pyc&#10;#&#9;frame/templates/down.html&#10;#&#9;frame/urls.pyc&#10;#&#9;frame/views.py&#10;#&#9;frame/views.pyc&#10;#&#9;templates/login.html" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -421,9 +476,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          <folding>
-            <element signature="e#14#46#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -447,9 +500,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#63#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -508,9 +559,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          <folding>
-            <element signature="e#14#46#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -534,9 +583,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#63#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -642,21 +689,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/python2.7/Lib/site-packages/django/core/paginator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="98" column="69" lean-forward="true" selection-start-line="98" selection-start-column="69" selection-end-line="98" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/python2.7/Lib/site-packages/django/core/handlers/exception.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://E:/python2.7/Lib/site-packages/django/core/paginator.py" />
+    <entry file="file://E:/python2.7/Lib/site-packages/django/core/handlers/exception.py" />
     <entry file="file://$PROJECT_DIR$/static/js/My97DatePicker/WdatePicker.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -746,15 +780,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/customer/templates/customer_care_edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1760">
-          <caret line="118" column="33" lean-forward="true" selection-start-line="118" selection-start-column="33" selection-end-line="118" selection-end-column="33" />
+        <state relative-caret-position="2714">
+          <caret line="118" column="33" lean-forward="false" selection-start-line="118" selection-start-column="33" selection-end-line="118" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/customer/templates/customer_care_add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1486">
+        <state relative-caret-position="460">
           <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
           <folding />
         </state>
@@ -762,26 +796,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/customer/templates/customer_care_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1178">
+        <state relative-caret-position="4117">
           <caret line="179" column="39" lean-forward="true" selection-start-line="179" selection-start-column="39" selection-end-line="179" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/customer/views.py">
+    <entry file="file://$PROJECT_DIR$/employee/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="37" column="27" lean-forward="true" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+        <state relative-caret-position="455">
+          <caret line="31" column="21" lean-forward="true" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
           <folding>
             <element signature="e#24#63#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/employee/views.py">
+    <entry file="file://$PROJECT_DIR$/customer/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        <state relative-caret-position="713">
+          <caret line="37" column="27" lean-forward="true" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
           <folding>
             <element signature="e#24#63#0" expanded="true" />
           </folding>
