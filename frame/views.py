@@ -1,12 +1,17 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
+from django.http import HttpResponse
 from django.shortcuts import render
 from RealEstate.models import *
 
 # Create your views here.
 def showFrame(request):
-    return render(request,'base.html')
+    nname = request.POST.get('userNum')
+    pwd = request.POST.get('userPw')
+    if nname =='admin' and pwd=='pwd':
+        return render(request,'base.html')
+    return render(request,'login.html')
 
 
 def top(request):
