@@ -41,8 +41,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'RealEstate',
     'frame',
-    'adm',
-    'customer'
+    'customer',
+    'employee',
+    'adm'
 ]
 
 MIDDLEWARE = [
