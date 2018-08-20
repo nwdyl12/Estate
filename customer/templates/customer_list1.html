@@ -145,7 +145,7 @@ for(i=0;i<cs.length;i++){
 			<td width="10%" height="22" background="/static/bg2.gif" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">备注</span></div></td>
 			<td width="15%" height="22" background="/static/bg2.gif" bgcolor="#FFFFFF" class="STYLE1"><div align="center">基本操作</div></td>
 </tr>
-{% for cusinfo in cusinfos %}
+{% for cusinfo in perpage_data %}
  <tr>
             <td height="20" bgcolor="#FFFFFF"style="width: 3%"><div align="center"><span class="STYLE1">{{ cusinfo.customer_name }}</span></div></td>
             <td height="20" bgcolor="#FFFFFF"style="width: 3%"><div align="center"><span class="STYLE1">{{ cusinfo.condition.condition_name}}</span></div></td>
@@ -166,9 +166,6 @@ for(i=0;i<cs.length;i++){
 
           </tr>
 {% endfor %}
-
-
-
          </table></td>
         <td width="8" background="/static/tab_15.gif">&nbsp;</td>
       </tr>
@@ -180,17 +177,43 @@ for(i=0;i<cs.length;i++){
         <td width="12" height="35"><img src="/static/tab_18.gif" width="12" height="35" /></td>
         <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr>
-            <td class="STYLE4">&nbsp;&nbsp;共有{{ list.size }}条记录，当前第 1/1页</td>
+            <td class="STYLE4">&nbsp;&nbsp;共有{{ count }}条记录，当前第 {{ curr_page }}/{{ total_page }}页</td>
             <td><table border="0" align="right" cellpadding="0" cellspacing="0">
                 <tr>
-                  <td width="40"><img src="/static/first.gif" width="37" height="15" /></td>
-                  <td width="45"><img src="/static/back.gif" width="43" height="15" /></td>
-                  <td width="45"><img src="/static/next.gif" width="43" height="15" /></td>
-                  <td width="40"><img src="/static/last.gif" width="37" height="15" /></td>
-                  <td width="100"><div align="center"><span class="STYLE1">转到第
-                    <input name="textfield" type="text" size="4" style="height:12px; width:20px; border:1px solid #999999;" />
-                    页 </span></div></td>
-                  <td width="40"><img src="/static/go.gif" width="37" height="15" /></td>
+                  <td width="40"><img src="/static/first.gif" width="37" height="15" style="cursor:hand"
+                                      onclick='window.location.href="./?page=1"'>
+                  </td>
+
+                   <td width="45">
+                        <img src="/static/back.gif" width="43" height="15" style="cursor:hand" onclick='
+                                {% if perpage_data.has_previous %}
+                                window.location.href="./?page={{ perpage_data.previous_page_number}}";
+                                {% endif %}'>
+                  </td>
+
+                   <td width="45">
+
+                        <img src="/static/next.gif" width="43" height="15" style="cursor:hand" onclick='
+                            {% if perpage_data.has_next %}
+                            window.location.href="./?page={{ perpage_data.next_page_number }}";
+                            {% endif %}'>
+                  </td>
+
+                  <td width="40"><img src="/static/last.gif" width="37" height="15" style="cursor:hand"
+                                      onclick='window.location.href="./?page={{ total_page }}"'>
+                  </td>
+
+                  <td width="100">
+                      <div align="center"><span class="STYLE1">转到第
+                            <input name="textfield" id="page" type="text" size="4" style="height:12px; width:20px;border:1px solid #999999;" />页</span>
+                      </div>
+                  </td>
+
+                   <td width="40"><img src="/static/go.gif" height="15" width="37" style="cursor:hand"
+                                      onclick=window.location.href="./?page="+document.getElementById('page').value>
+
+                  </td>
+
                 </tr>
             </table></td>
           </tr>

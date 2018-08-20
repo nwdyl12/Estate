@@ -1,10 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+<script src="/static/echarts.js"></script>
+
 <head>
     <meta charset="UTF-8">
     <title>业绩报表</title>
 </head>
 <body>
-{{ bar.render }}
-</body>
+<span style="width:800px;height:400px">
+
+    <div id='left' style="width:400px;float:left;height: 400px"></div>
+     <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('left'));
+     // 初始 option
+       option = {
+    	    title: {
+    	        text: '异步数据加载示例'
+    	    },
+    	    tooltip: {},
+    	     legend: {
+           data:["销售0","销售1","销售2"]
+    	 },
+
+    	    xAxis: {
+    	    	type : "category",
+    	    	data :[]
+    	    },
+    	    yAxis: [{
+				type : "value",
+
+			}],
+    	    series: [
+    	               {
+    	            	   name:"销售0",
+    	            	   type:"bar",
+    	            	   data:[]
+    	               },
+    	               {
+    	            	   name:"销售1",
+    	            	   type:"bar",
+    	            	   data:[]
+    	               },
+    	               {
+    	            	   name:"销售2",
+    	            	   type:"bar",
+    	            	   data:[]
+    	               }
+    ]
+    	};
+       myChart.showLoading();
+    	//通过Ajax获取数据
+    	$.ajax({
+    		type : "post",
+    		async : true, //异步执行
+    		url : "AcceptData",
+    		dataType : "json", //返回数据形式为json
+    		success : function(json) {
+
+    			if (json) {
+    				 fetchData(function (data) {
+    			            myChart.hideLoading();
+    			            myChart.setOption({
+
+    		    				xAxis:{
+    		    					data:json.xAxisData
+    		    				},
+
+
+    		    				series: json.seriesList
+
+
+
+
+    		    			});
+
+    			});
+    		}
+    		},
+    		error : function(errorMsg) {
+    			alert("请求数据失败");
+    		}
+    	});
+        myChart.setOption(option);
+    </script>
+    <div id="right" style="width: 400px;height:400px;float:left;">
+             <script>
+                    var myChart = echarts.init(document.getElementById('right'));
+                    myChart.setOption({
+                    series : [
+                        {
+                            name: '访问来源',
+                            type: 'pie',
+                            radius: '55%',
+                            data:[
+                                {value:235, name:'自己上门'},
+                                {value:274, name:'朋友介绍'},
+                                {value:310, name:'邮件营销'},
+                                {value:335, name:'街坊广告'},
+                                {value:400, name:'搜索引擎'}
+                            ]
+                        }
+                    ]
+                })
+             </script>
+         </div>
+</body></span>
+{#     <span id="main" style="width: 800px;height:800px;">#}
+{#         <div id="left" style="width: 400px;height:400px;float: left">#}
+{#            <script type="text/javascript">#}
+{#                // 基于准备好的dom，初始化echarts实例#}
+{#                var myChart = echarts.init(document.getElementById('main'));#}
+{##}
+{#                // 指定图表的配置项和数据#}
+{#                var option = {#}
+{#                    title: {#}
+{#                        text: '8月季度报表'#}
+{#                    },#}
+{#                    tooltip: {},#}
+{#                    legend: {#}
+{#                        data:['销量']#}
+{#                    },#}
+{#                    xAxis: {#}
+{#                        data: ["海淀区","朝阳区","通州区","东城区","西城区","丰台区"]#}
+{#                    },#}
+{#                    yAxis: {},#}
+{#                    series: [{#}
+{#                        name: '销量',#}
+{#                        type: 'bar',#}
+{#                        data: [5, 20, 36, 10, 10, 20]#}
+{#                    }]#}
+{#                };#}
+{##}
+{#                // 使用刚指定的配置项和数据显示图表。#}
+{#                myChart.setOption(option);#}
+{#            </script>#}
+{#         </div>#}
+
+{##}
+{#     </span>#}
+
 </html>

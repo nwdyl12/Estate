@@ -10,10 +10,11 @@ urlpatterns = [
     url(r'^customer_edit/(\d+)/$', views.cusEdit),
     url(r'^customer_secadd/(\d+)/$', views.cusSecAdd),
     url(r'^customer_search/$', views.cusSea),
-    url(r'^customer_type_list/$', views.cusList),
+
+    url(r'^customer_type_list/$', views.cusTypeList),
     url(r'^cusTypeQury/$', views.customQury),
     url(r'^cusTypeDel/$', views.customDel),
-    url(r'^customer_type_add/$', views.cusAdd),
+    url(r'^customer_type_add/$', views.cusTypeAdd),
     url(r'^cusTypeadd/$', views.customAdd),
 
 ]

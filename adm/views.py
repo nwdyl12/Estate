@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
 
 # Create your views here.
@@ -45,3 +45,23 @@ def empAddInfo(request):
        user_email =userEmail, user_addman  =userAddman ,user_changeman =userAddman,user_intest =userIntest , user_diploma = userDiploma, user_bankcard =userBankcard,
         user_nation =userNation,is_married =isMarried)
         return HttpResponse('<script>alert("添加成功!");location.href="/adm/emp_add/";</script>')
+
+
+def depShow(request):
+    return render(request, 'dept_add.html')
+
+
+def depAdd(request):
+    depName = request.POST.get('depName', '')
+    depDesc = request.POST.get('depDesc', '')
+    dep = DepartmentInfo.objects.create(department_name=depName, department_desc=depDesc)
+    print dep
+    flag = '添加成功！'
+    return JsonResponse({'flag': flag})
+    # 这里我想alert一个修改成功，点确定之后重定向到部门页面
+
+
+def baoBiao(request):
+    hList=HouseType.objects.all()
+    cSourList=CustomerSource.objects.all()
+    return render(request,'baobiao.html',{'hList':hList,'cSourList':cSourList})
